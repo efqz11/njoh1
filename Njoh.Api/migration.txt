@@ -1,0 +1,8 @@
+﻿/// create migrations
+
+cd Njoh.Data
+dotnet ef migrations add initialCreate -o ./Migrations/ -s ../Njoh.Api -v
+
+
+// create database and run migrations
+dotnet ef database update -s ../Njoh.Api -v
